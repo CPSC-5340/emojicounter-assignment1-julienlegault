@@ -57,11 +57,15 @@ struct ListItem: View {
             Spacer()
             Image(systemName: "plus")
                 .imageScale(.large)
+                .padding(2)
+                .border(.tint, width: 2)
                 .onTapGesture {
                     counter += 1
                 }
             Image(systemName: "minus")
                 .imageScale(.large)
+                .padding(EdgeInsets(top: 10, leading: 2, bottom: 10, trailing: 2))
+                .border(.tint, width: 2)
                 .onTapGesture {
                     counter -= 1
                 }
